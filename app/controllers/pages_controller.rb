@@ -1,14 +1,14 @@
 class PagesController < ApplicationController
   http_basic_authenticate_with name: "desafiovamoscontodo", password: "XAHTJEAS23123%23", only: :dashboard
 
+  
   def dashboard
     if params[:state].present?
       @projects = Project.where('state = ?', params[:state])
-    else
+    else 
       @projects = Project.find_valid
-    end
+    end 
   end
-
 
   def index
     @project = Project.new

@@ -1,0 +1,41 @@
+<h1>Crea tu Proyecto</h1>
+
+<form method="get" action="create" id="create_project">
+
+    <div class="form-group">
+        <label for="name">Nombre</label>
+        <input name= "name" type="text" class="form-control" id="name" ariadescribedby="
+        emailHelp" placeholder="">
+    </div>
+
+    <div class="form-group">
+        <label for="description">Descripción</label>
+        <textarea name="description" class="form-control"> </textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="started_at">Fecha de Inicio</label>
+        <input name= "started_at" type="date" class="form-control"  ariadescribedby="
+        emailHelp" placeholder="">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="finished_at">Fecha de Término</label>
+        <input name= "finished_at" type="date" class="form-control"  ariadescribedby="
+        emailHelp" placeholder="">
+    </div>  
+    <br>
+    <div>
+        <div><label for="state">Estado del Proyecto</label></div>
+        <div><select id="state" name="state">
+            <option selected="selected" value="Propuesta">Propuesta</option>
+            <option value="En Proceso">En Proceso</option>
+            <option value="Finalizado">Finalizado</option>
+            </select></div>
+    </div>  
+    <br>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    
+
